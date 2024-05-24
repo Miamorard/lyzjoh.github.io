@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> 
+    <title>Change Text Onload Example</title>
+    <style>
+      .carousel-item img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%; 
+        height: auto; 
+      }
+      .carousel-caption-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white; 
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .carousel-caption-bottom h1 {
+    font-size: 24px; 
+}
+      .box{
+        height:300px;
+        margin-bottom:20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position:relative;
+      }
+      .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position:absolute; 
+            margin: 10px;
+        }
+
+      .box-sm{
+        background-color:#FFC107;
+      }
+      .box-md{
+        background-color:#28A745;
+      }
+      .box-lg{
+        background-color:#007BFF;
+      }
+      .box-xg{
+        background-color:#f0f0f0
+      }
+      .box-fluid{
+        background-color:aqua;
+      }
+      .left-aligned-image {
+            float:left;
+           margin:left;
+} 
+      hr {
+        margin: 30px 0;
+      }
+      hr {
+            margin: 30px 0;
+            background-color: #000; 
+            height: 1px; 
+            border: none;
+        }
+
+        h1.contact-heading {
+            color: #000; 
+            text-align: center;
+            font-size: 18px; 
+        }
+        .container-contact {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    </head>
+
+    <body>  
+        <h1 style="text-align:center;">TAKING PICTURES IS WONDERFUL</h1>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="https://cdn.pixabay.com/photo/2023/09/21/14/15/background-8266762_1280.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2022/12/29/06/16/mouth-7684262_1280.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2024/04/13/10/20/peacock-8693634_1280.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-caption-bottom">
+                <h1>THE IMAGES MAKE A FACE TO HAVE A SMILE</h1>
+            </div>
+            </div>
+          </div>
+          <hr style="margin: 30px 0;">
+          <div class="container">
+            <h1 style="text-align:center;">FAVOURITE PLACES TO VISIT</h1>
+            <p style="text-align:center;">Love adventure so much because it's make me put a big smile.</p>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="box box-sm">
+                  <img src="https://cdn.pixabay.com/photo/2021/07/24/07/25/chow-chow-6488849_960_720.jpg" class="d-block w-100" alt="...">
+                </div>
+                <h1>WIND BLOWING</h1>
+                <p>puppies enjoying the wind</p>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="box box-md">
+                <img src="https://cdn.pixabay.com/photo/2024/02/23/18/59/desert-8592629_1280.jpg" class="d-block w-100" alt="...">
+              </div>
+              <h1>BIRDS AND SUNRISE</h1>
+              <p>birds flying through the SUNRISE</p>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="box box-lg">
+                  <img src="https://cdn.pixabay.com/photo/2024/04/17/15/06/ai-generated-8702284_1280.jpg" class="d-block w-100" alt="...">
+                </div>
+                <h1>CREATURES OF SEA</h1>
+                <p>a fish passing by the water</p>
+              </div> 
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="box box-xg">
+                  <img src="https://cdn.pixabay.com/photo/2023/06/19/18/41/blue-jay-8075346_1280.jpg" class="d-block w-100" alt="...">
+                </div>
+                <h1>BIRD LOOKING</h1>
+                <p>a bird looking out</p>
+              </div> 
+            </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2017/02/19/15/28/sunset-2080072_1280.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.pixabay.com/photo/2021/01/01/14/29/skiing-5878729_1280.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.pixabay.com/photo/2020/04/09/14/42/girls-5021801_1280.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div class="carousel-caption-bottom">
+              <h1>ENJOYING OTHER COUNTRY FEATURES</h1>
+          </div>
+          </div>
+        </div>
+        <hr style="margin: 30px 0;"> 
+        <div class="container">
+          <h1 style="text-align:center;">AMAZEMENTS IN SOME COUNTRIES</h1>
+          <p style="text-align:center;">looking at how people are enjoying and putting a smile because of their countries</p>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="box box-sm">
+                <img src="https://cdn.pixabay.com/photo/2014/08/08/21/19/tree-413714_1280.jpg" class="d-block w-100" alt="...">
+              </div>
+              <h1>THE SIGHT</h1>
+              <p>enjoying the sight</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="box box-md">
+              <img src="https://cdn.pixabay.com/photo/2023/03/20/02/11/bridge-7863619_960_720.jpg" class="d-block w-100" alt="...">
+            </div>
+            <h1 style="text-align:center;">SEEING THE WAVES OF THE WATER</h1>
+            <p style="text-align:center;">passing the wooded brigde to see the waving water</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="box box-lg">
+                <img src="https://cdn.pixabay.com/photo/2020/03/30/14/37/norway-4984433_1280.jpg" class="d-block w-100" alt="...">
+              </div>
+              <h1>HOUSES AROUND THE SEA</h1>
+              <p>how beautiful the houses are built around the sea</p>
+            </div> 
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="box box-xg">
+                <img src="https://cdn.pixabay.com/photo/2020/03/03/03/56/farmers-4897451_1280.jpg" class="d-block w-100" alt="...">
+              </div>
+              <h1>PLANTATION OF RICE</h1>
+              <p>seeing the smile in the farmers planting the rice</p>
+            </div> 
+          </div>
+          <hr style="margin: 30px 0;"> 
+          <div style="float:left; width:50%;">
+            <h1>MY STORY</h1>
+            <P>A journey in photography is wonderful and joyful.Having a smile while looking at the people how their enjoy there staying in their country.A picture shows alot of features like love,sadness,anger,betrayal and a lot of adventure.</P>
+            <p>Photography has alot toughness and danger.Have to go on taking picture to show happiness on the people and putting smiles on them.Putting a positive mindset saying that something that is impossible is possible to do.</p>
+          </div>
+          <div>
+          <img src="https://cdn.pixabay.com/photo/2015/11/07/08/49/hand-1030563_960_720.jpg" class="d-block w-50 float-right" alt="Right Aligned Image">
+          </div>
+          <div class="container">
+            <h1 style="text-align:center;">FOLLOW US ON INSTAGRAM</h1>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                <div class="box box-sm">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/11/16/instagram-1834010_1280.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box box-md">
+                <img src="https://cdn.pixabay.com/photo/2014/11/03/10/44/camera-514992_1280.jpg" class="d-block w-100" alt="...">
+              </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box box-lg">
+                  <img src="https://cdn.pixabay.com/photo/2023/11/14/15/46/nikon-8388022_1280.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div> 
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box box-xg">
+                  <img src="https://cdn.pixabay.com/photo/2017/10/04/11/45/instagram-2815919_960_720.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                  <div class="box box-xg">
+                      <img src="https://cdn.pixabay.com/photo/2018/05/11/22/04/instagram-3391847_960_720.jpg" class="d-block w-100" alt="...">
+                  </div>
+                 </div>
+                </div>
+               </div>
+            <hr style="margin: 30px 0;">
+
+            <div class="container-contact">
+              <div class="row">
+                <div class="col-md-4">
+              <h1>CONTACTS US</h1>
+              <hr>
+              <P>+254744888754.</P>
+              <p>+254750867422.</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+              <h1>LOCATED</h1>
+              <hr>
+              <P>Roysambu,near complex building
+                galaxy photography,4th floor
+                room number 307
+              </P>
+            </div>
+            <div class="col-md-4">   
+              <h1>follows us</h1>
+              <hr>
+              <P><img src="https://cdn.pixabay.com/photo/2021/02/08/15/34/social-media-5995251_1280.png"  style="width: 100px; height: auto;" alt="..."></P>
+          </div>
+         </div>
+        </div>  
+        <h1>Click the button to see the alert!</h1>
+    
+    <button onclick="showAlert()">Click me</button>
+
+    <h2 id="text">Initial Text</h2>
+  
+  <button onclick="changeText()">Change Text</button>
+
+
+    <script>
+        function showAlert() {
+            alert("Hello! This is an alert message.");
+        }
+      function changeText() {
+          var element = document.getElementById("text");
+          
+          element.textContent = "New Text";
+      }
+      window.onload = function() {
+          showAlert();
+      };
+
+    </script>   
+    </body>
+    </html>
